@@ -1,0 +1,98 @@
+/* ─────────────────────────────────────────
+   css/base.css
+   Reset and global base styles
+───────────────────────────────────────── */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--charcoal);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Shared utility classes */
+.section-label {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.section-label--light { color: var(--rose); }
+.section-label--dark  { color: var(--blush); }
+
+.btn-primary {
+  background: var(--charcoal);
+  color: var(--cream);
+  padding: 15px 34px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 400;
+  transition: background var(--transition-normal);
+}
+.btn-primary:hover { background: var(--deep-rose); }
+
+.btn-ghost {
+  background: none;
+  border: none;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  opacity: 0.45;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity var(--transition-normal);
+}
+.btn-ghost:hover { opacity: 0.8; }
+
+.btn-outline-dark {
+  background: none;
+  border: 0.5px solid rgba(212, 191, 187, 0.22);
+  color: rgba(247, 229, 223, 0.45);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 15px 52px;
+  transition: border-color var(--transition-normal), color var(--transition-normal);
+}
+.btn-outline-dark:hover {
+  border-color: rgba(212, 191, 187, 0.5);
+  color: rgba(247, 229, 223, 0.75);
+}
