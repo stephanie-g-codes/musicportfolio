@@ -1,0 +1,48 @@
+/* ─────────────────────────────────────────
+   css/variables.css
+   Design tokens for Rosie Crown website
+───────────────────────────────────────── */
+
+:root {
+  /* Brand palette */
+  --blush:     #F2C4B8;
+  --rose:      #C97B8A;
+  --deep-rose: #8B4A58;
+  --petal:     #F7E5DF;
+  --cream:     #FAF4EF;
+  --charcoal:  #2A2220;
+  --mist:      #D4BFBB;
+  --gold:      #C4A882;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Spacing scale */
+  --space-xs:  8px;
+  --space-sm:  16px;
+  --space-md:  32px;
+  --space-lg:  64px;
+  --space-xl:  100px;
+
+  /* Section padding */
+  --section-px: 64px;
+  --section-py: 100px;
+
+  /* Transitions */
+  --transition-fast:   0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow:   0.4s ease;
+
+  /* Z-index layers */
+  --z-nav:    100;
+  --z-hero:   1;
+  --z-modal:  200;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --section-px: 32px;
+    --section-py: 64px;
+  }
+}

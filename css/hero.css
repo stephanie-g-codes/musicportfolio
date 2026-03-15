@@ -1,0 +1,120 @@
+/* ─────────────────────────────────────────
+   css/hero.css
+───────────────────────────────────────── */
+
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero__visual-col {
+  position: relative;
+  overflow: hidden;
+  background: var(--blush);
+}
+
+.hero__visual {
+  width: 100%; height: 100%;
+  background: linear-gradient(160deg, #F2C4B8 0%, #C97B8A 55%, #8B4A58 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.hero__visual-inner {
+  position: relative; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.hero__blob {
+  width: 340px; height: 520px;
+  background: linear-gradient(170deg, #F7E5DF, #C97B8A);
+  border-radius: 200px 200px 180px 180px;
+  opacity: 0.3;
+  position: absolute;
+  animation: heroBlob 8s ease-in-out infinite;
+}
+
+@keyframes heroBlob {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50%       { transform: translateY(-18px) scale(1.02); }
+}
+
+.hero__script {
+  position: absolute; bottom: 16%;
+  font-family: var(--font-display);
+  font-size: 46px; font-style: italic; font-weight: 300;
+  color: rgba(250, 244, 239, 0.55); letter-spacing: 0.08em;
+  user-select: none;
+}
+
+.hero__vline {
+  position: absolute; top: 26%; left: 50%;
+  transform: translateX(-50%);
+  width: 1px; height: 160px;
+  background: linear-gradient(to bottom, transparent, rgba(250,244,239,0.25), transparent);
+}
+
+/* Replace .hero__visual-col with a real photo:
+   Add class="hero__photo" to your <img> tag,
+   or set background-image on .hero__visual-col */
+.hero__photo {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero__text-col {
+  background: var(--petal);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 120px var(--section-px) 80px calc(var(--section-px) - 8px);
+  position: relative;
+}
+
+.hero__eyebrow {
+  font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--rose); margin-bottom: 20px; font-weight: 400;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.2s forwards;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 7vw, 82px);
+  font-weight: 300; line-height: 0.93;
+  color: var(--charcoal); letter-spacing: -0.01em;
+  margin-bottom: 36px;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.4s forwards;
+}
+.hero__title em { font-style: italic; color: var(--deep-rose); }
+
+.hero__desc {
+  font-size: 14px; line-height: 1.85;
+  color: var(--charcoal); opacity: 0;
+  max-width: 300px; margin-bottom: 52px; font-weight: 300;
+  animation: fadeUp 0.9s 0.6s forwards;
+}
+
+.hero__cta {
+  display: flex; align-items: center; gap: 24px;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.8s forwards;
+}
+
+.hero__scroll-hint {
+  position: absolute; bottom: 40px; right: 40px;
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--mist); writing-mode: vertical-rl; opacity: 0.6;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero__visual-col { min-height: 56vw; }
+  .hero__text-col { padding: 64px var(--section-px); justify-content: flex-start; }
+}
