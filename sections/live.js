@@ -18,8 +18,8 @@ function renderLive() {
     const p    = platformMap[v.platform];
     const size = featured ? "lg" : "sm";
 
-    return `
-      <div class="video-card${featured ? " featured" : ""}" data-id="${v.id}" data-embed="${v.embedId || ""}">
+   return `
+      <div class="video-card${featured ? " featured" : ""}" data-id="${v.id}" data-platform="${v.platform}" data-embed="${v.embedId || ""}">
         <div class="video-card__thumb">
           <div class="video-card__bg" style="background:${v.bgColor};"></div>
           <div class="video-card__bg-label" style="font-size:${featured ? "80px" : "36px"};">${v.bgLabel}</div>
@@ -97,22 +97,28 @@ function renderLive() {
     });
   });
 
-  // Video card click → YouTube embed
+  // Video card click → YouTube embeds inline, Instagram/TikTok open in new tab
   document.querySelectorAll(".video-card").forEach(card => {
     card.addEventListener("click", () => {
       const embedId = card.dataset.embed;
+      const platform = card.dataset.platform;
       if (!embedId) return;
-      const thumb = card.querySelector(".video-card__thumb");
-      thumb.innerHTML = `
-        <iframe
-          src="https://www.youtube.com/embed/${embedId}?autoplay=1"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          style="position:absolute;inset:0;width:100%;height:100%;">
-        </iframe>
-      `;
-      thumb.style.padding = "0";
+
+      if (platform === "youtube") {
+        const thumb = card.querySelector(".video-card__thumb");
+        thumb.innerHTML = `
+          <iframe
+            src="https://www.youtube.com/embed/${embedId}?autoplay=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position:absolute;inset:0;width:100%;height:100%;">
+          </iframe>
+        `;
+        thumb.style.padding = "0";
+      } else {
+        window.open(embedId, "_blank", "noopener,noreferrer");
+      }
     });
   });
 }

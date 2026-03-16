@@ -82,7 +82,7 @@ const SITE_DATA = {
     },
     {
       id:       "v3",
-      platform: "tiktok",
+      platform: "instagram",
       title:    '"Mary on a cross"',
       meta:     "",
       embedId:  "https://www.instagram.com/reel/Cj4aq-DAyZt/",
@@ -92,7 +92,7 @@ const SITE_DATA = {
     },
     {
       id:       "v4",
-      platform: "youtube",
+      platform: "instagram",
       title:    '"Hate me"',
       meta:     "",
       embedId:  "https://www.instagram.com/reel/CISPR8nD3P-/",
@@ -112,7 +112,7 @@ const SITE_DATA = {
     },
     {
       id:       "v6",
-      platform: "tiktok",
+      platform: "instagram",
       title:    "The Winner Takes It All",
       meta:     "",
       embedId:  "https://www.instagram.com/reel/C1-0Hjrul6M/",
@@ -122,13 +122,23 @@ const SITE_DATA = {
     },
     {
       id:       "v7",
-      platform: "youtube",
+      platform: "instagram",
       title:    "Santeria",
       meta:     "",
       embedId:  "https://www.instagram.com/reel/DIaLxEmNcHJ/",
       bgLabel:  "Santeria",
       bgColor:  "linear-gradient(135deg,#2e2a3a,#5a3a50)",
       featured: false,
+    },
+        {
+      id:       "v7",
+      platform: "tiktok",
+      title:    "Zombie",
+      meta:     "",
+      embedId:  "https://www.tiktok.com/@therosiecrown/video/7617137794930068749?is_from_webapp=1&sender_device=pc&web_id=7570434456143889950",
+      bgLabel:  "Zombie",
+      bgColor:  "linear-gradient(135deg,#2e2a3a,#5a3a50)",
+      featured: true,
     },
   ],
 
