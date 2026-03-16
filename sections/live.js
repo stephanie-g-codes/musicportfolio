@@ -174,27 +174,42 @@ function renderLive() {
   });
 }
 
+function stopAudio(idx) {
+  const audioEl = document.getElementById("audioEl_" + idx);
+  if (audioEl) {
+    audioEl.pause();
+    audioEl.currentTime = 0;
+  }
+  if (audioRaf) cancelAnimationFrame(audioRaf);
+  resetAudioBtn(idx);
+}
+
 function toggleAudio(idx) {
   const { tracks } = SITE_DATA;
 
+  // Same track pressed — stop it
   if (audioPlaying === idx) {
-    // Pause
+    stopAudio(idx);
     audioPlaying = -1;
-    if (audioRaf) cancelAnimationFrame(audioRaf);
-    resetAudioBtn(idx);
     return;
   }
 
-  // Stop previous
-  if (audioPlaying !== -1) resetAudioBtn(audioPlaying);
+  // Different track pressed — stop the previous one first
+  if (audioPlaying !== -1) stopAudio(audioPlaying);
 
-  // If real audio src exists, play it
+  // Start the new track
   const track = tracks[idx];
   if (track.audioSrc) {
     let audioEl = document.getElementById("audioEl_" + idx);
     if (!audioEl) {
       audioEl = new Audio(track.audioSrc);
       audioEl.id = "audioEl_" + idx;
+      // Auto-reset UI when track finishes naturally
+      audioEl.addEventListener("ended", () => {
+        resetAudioBtn(idx);
+        audioProgress[idx] = 0;
+        audioPlaying = -1;
+      });
     }
     audioEl.play().catch(() => {});
   }
@@ -204,7 +219,6 @@ function toggleAudio(idx) {
   setAudioActiveBtn(idx);
   audioRaf = requestAnimationFrame(tickAudio);
 }
-
 function resetAudioBtn(idx) {
   const btn = document.getElementById("aBtn" + idx);
   if (btn) {
