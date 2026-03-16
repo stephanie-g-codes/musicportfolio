@@ -53,13 +53,15 @@
 .form-textarea { resize: none; height: 60px; }
 
 .booking__submit {
-  background: var(--deep-rose); color: var(--petal); border: none;
-  padding: 16px 42px; font-size: 11px; letter-spacing: 0.16em;
-  text-transform: uppercase; align-self: flex-start; margin-top: 8px;
+  display: inline-block;
+  background: var(--deep-rose); color: var(--petal);
+  padding: 16px 42px; font-family: var(--font-body);
+  font-size: 11px; letter-spacing: 0.16em;
+  text-transform: uppercase; margin-top: 8px;
+  text-decoration: none;
   transition: background var(--transition-normal);
 }
 .booking__submit:hover { background: var(--charcoal); }
-
 /* Success message */
 .booking__success {
   display: none;
