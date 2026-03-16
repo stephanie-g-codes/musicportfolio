@@ -14,6 +14,7 @@
   padding: 32px var(--section-px);
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .stream__right {
@@ -27,6 +28,7 @@
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
+  
   color: var(--charcoal);
   opacity: 0.4;
 }
