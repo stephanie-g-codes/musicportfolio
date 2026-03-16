@@ -21,7 +21,7 @@ function renderHero() {
         </h1>
         <p class="hero__desc">${artist.heroSubtitle}</p>
         <div class="hero__cta">
-          <button class="btn-primary" onclick="document.querySelector('#music').scrollIntoView({behavior:'smooth'})">
+          <button class="btn-primary" onclick="document.querySelector('#audio').scrollIntoView({behavior:'smooth'})">
             Listen Now
           </button>
           <button class="btn-ghost" onclick="document.querySelector('#booking').scrollIntoView({behavior:'smooth'})">
