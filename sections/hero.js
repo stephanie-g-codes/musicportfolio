@@ -21,16 +21,26 @@ function renderHero() {
         </h1>
         <p class="hero__desc">${artist.heroSubtitle}</p>
         <div class="hero__cta">
-          <button class="btn-primary" onclick="document.querySelector('#audio').scrollIntoView({behavior:'smooth'})">
-            Listen Now
-          </button>
-          <button class="btn-ghost" onclick="document.querySelector('#booking').scrollIntoView({behavior:'smooth'})">
-            Request Booking
-          </button>
+          <button class="btn-primary" id="heroListenBtn">Listen Now</button>
+          <button class="btn-ghost"   id="heroBookBtn">Request Booking</button>
         </div>
         <span class="hero__scroll-hint">Scroll</span>
       </div>
 
     </section>
   `;
+
+  // Attach scroll handlers after the DOM is injected.
+  // Using getElementById + null check prevents the
+  // "Cannot read properties of null (scrollIntoView)" error
+  // that occurs when the target section hasn't rendered yet.
+  document.getElementById("heroListenBtn").addEventListener("click", () => {
+    const target = document.getElementById("audio");
+    if (target) target.scrollIntoView({ behavior: "smooth" });
+  });
+
+  document.getElementById("heroBookBtn").addEventListener("click", () => {
+    const target = document.getElementById("booking");
+    if (target) target.scrollIntoView({ behavior: "smooth" });
+  });
 }
