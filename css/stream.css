@@ -5,29 +5,35 @@
 
 .stream {
   background: var(--petal);
-  padding: 40px var(--section-px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
   border-bottom: 0.5px solid var(--mist);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
+.stream__left {
+  padding: 32px var(--section-px);
+  display: flex;
+  align-items: center;
+}
+
+.stream__right {
+  padding: 32px var(--section-px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
 .stream__label {
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--charcoal);
   opacity: 0.4;
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 
 .stream__links {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .stream__btn {

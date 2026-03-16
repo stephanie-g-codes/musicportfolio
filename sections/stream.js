@@ -23,10 +23,12 @@ function renderStream() {
     </svg>
   `;
 
-  document.getElementById("stream-root").innerHTML = `
+document.getElementById("stream-root").innerHTML = `
     <div class="stream" id="stream">
-      <span class="stream__label">Stream now</span>
-      <div class="stream__links">
+      <div class="stream__left">
+        <span class="stream__label">Stream now</span>
+      </div>
+      <div class="stream__right">
         ${spotify ? `
           <a class="stream__btn stream__btn--spotify"
              href="${spotify.href}"
