@@ -67,8 +67,8 @@
 
 .hero__text-col {
   background: var(--petal);
-  display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 120px var(--section-px) 80px calc(var(--section-px) - 8px);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 80px var(--section-px) 80px calc(var(--section-px) - 8px);
   position: relative;
 }
 
