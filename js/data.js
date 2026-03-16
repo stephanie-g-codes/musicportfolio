@@ -34,7 +34,7 @@ const SITE_DATA = {
   // ── Tracks ───────────────────────────────
   // audioSrc: path relative to index.html, e.g. "assets/snooze.mp3"
   tracks: [
-    { num: "01", name: "Snooze - Sneak Peak",      duration: "0:29", badge: "New Release", audioSrc: "assets/Snooze_Sneak_Peak.wav" },
+    { num: "01", name: "Snooze - Sneak Peak",      duration: "0:28", badge: "New Release", audioSrc: "assets/Snooze_Sneak_Peak.wav" },
     { num: "02", name: "Together",                 duration: "0:28", badge: "New Release", audioSrc: "assets/togethershort.wav" },
     { num: "03", name: "Angel",                    duration: "1:45", badge: null,          audioSrc: "assets/AngelWeb.m4a" },
     { num: "04", name: "I love you, friend",       duration: "0:25", badge: null,          audioSrc: "assets/iloveyoufriendshort.wav" },
