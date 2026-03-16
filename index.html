@@ -9,6 +9,9 @@
   <meta property="og:description" content="Dreamy pop singer-songwriter — stream, watch live, and book." />
   <meta property="og:type" content="website" />
 
+  <!-- Silence favicon 404 -->
+  <link rel="icon" href="data:," />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +23,8 @@
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/hero.css" />
   <link rel="stylesheet" href="css/marquee.css" />
-  <!-- <link rel="stylesheet" href="css/music.css" /> -->
+  <link rel="stylesheet" href="css/stream.css" />
+  <link rel="stylesheet" href="css/audio.css" />
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/live.css" />
   <link rel="stylesheet" href="css/booking.css" />
@@ -34,13 +38,16 @@
   <!-- Hero -->
   <div id="hero-root"></div>
 
+  <!-- Streaming links (Spotify / Apple Music) -->
+  <div id="stream-root"></div>
+
   <!-- Marquee -->
   <div id="marquee-root"></div>
 
-  <!-- Music -->
-  <!-- <div id="music-root"></div> -->
+  <!-- Audio player -->
+  <div id="audio-root"></div>
 
-  <!-- Live & Media -->
+  <!-- Live & Media (videos) -->
   <div id="live-root"></div>
 
   <!-- About -->
@@ -52,14 +59,15 @@
   <!-- Footer -->
   <div id="footer-root"></div>
 
-  <!-- Section scripts (load order matters) -->
+  <!-- Scripts — data.js first, main.js last -->
   <script src="js/data.js"></script>
   <script src="sections/nav.js"></script>
   <script src="sections/hero.js"></script>
+  <script src="sections/stream.js"></script>
   <script src="sections/marquee.js"></script>
-  <script src="sections/about.js"></script>
+  <script src="sections/audio.js"></script>
   <script src="sections/live.js"></script>
-  <!-- <script src="sections/music.js"></script> -->
+  <script src="sections/about.js"></script>
   <script src="sections/booking.js"></script>
   <script src="sections/footer.js"></script>
   <script src="js/main.js"></script>
