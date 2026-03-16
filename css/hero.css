@@ -124,7 +124,21 @@
     min-height: unset;
     max-height: unset;
   }
-  .hero__visual-col { min-height: 50vw; max-height: 60vw; }
-  .hero__photo { max-height: 60vw; }
-  .hero__text-col { padding: 64px var(--section-px); justify-content: flex-start; }
+  .hero__visual-col {
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+  }
+  .hero__photo {
+    width: 100%;
+    height: auto;
+    max-height: unset;
+    object-fit: contain;
+    object-position: center top;
+  }
+  .hero__text-col {
+    padding: 48px var(--section-px);
+    justify-content: flex-start;
+  }
 }
