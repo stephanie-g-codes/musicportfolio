@@ -65,10 +65,9 @@ const SITE_DATA = {
     {
       id:             "v1",
       platform:       "youtube",
-      title:          '"Snooze" — Live at The Velvet Room',
-      meta:           "14.2k views · 3 weeks ago",
-      embedId:        "dQw4w9WgXcQ",          // ← replace with real YouTube ID
-      bgLabel:        '"Snooze"',
+      title:          '"Tennessee Whiskey" — Live at Reveler',
+      embedId:        "qspflJpjPC4",
+      bgLabel:        '"Tennessee Whiskey"',
       bgColor:        "linear-gradient(155deg,#3a2e2c,#6b3a44)",
       featured:       true,
     },
@@ -76,8 +75,7 @@ const SITE_DATA = {
       id:             "v2",
       platform:       "instagram",
       title:          '"Dried Roses" Reel',
-      meta:           "8.9k plays",
-      embedId:        null,
+      embedId:        "https://www.instagram.com/reel/DRf8UopDfiA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       bgLabel:        "dried roses",
       bgColor:        "linear-gradient(135deg,#2e2a3a,#5a3a50)",
       featured:       false,
@@ -136,19 +134,16 @@ const SITE_DATA = {
 
   // ── Booking contact details ───────────────
   bookingDetails: [
-    { label: "Management",    value: "bookings@rosiecrown.com" },
-    { label: "Press & Media", value: "press@rosiecrown.com"    },
-    { label: "EPK Available", value: "On request"              },
-    { label: "Response time", value: "Within 48 hours"        },
+    { label: "Management",    value: "therosiecrown@gmail.com" }
   ],
 
   // ── Social links ─────────────────────────
   socials: [
-    { label: "Instagram",    href: "https://instagram.com" },
-    { label: "Spotify",      href: "https://spotify.com"   },
-    { label: "Apple Music",  href: "https://music.apple.com" },
-    { label: "TikTok",       href: "https://tiktok.com"    },
-    { label: "YouTube",      href: "https://youtube.com"   },
+    { label: "Instagram",    href: "https://www.instagram.com/therosiecrown/" },
+    { label: "Spotify",      href: "https://open.spotify.com/artist/4R5Td0kAQ1fcWeES76vzdG?si=5JIK-5JBQ2a_AkP7XtKjnQ"   },
+    { label: "Apple Music",  href: "https://music.apple.com/us/artist/rosie-crown/1782194425" },
+    { label: "TikTok",       href: "https://www.tiktok.com/@therosiecrown"    },
+    { label: "YouTube",      href: "https://www.youtube.com/@rosiecrown"   },
   ],
 
 };
