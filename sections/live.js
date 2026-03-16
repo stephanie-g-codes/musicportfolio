@@ -79,10 +79,6 @@ function renderLive() {
       ${buildPanel("instagram", igVideos,  false)}
       ${buildPanel("tiktok",    ttVideos,  false)}
 
-      <div class="live__view-more">
-        <button class="btn-outline-dark">View all performances</button>
-      </div>
-
     </section>
   `;
 

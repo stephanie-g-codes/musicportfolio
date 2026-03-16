@@ -21,12 +21,12 @@
   padding: 32px var(--section-px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
 }
 .stream__label {
-  font-size: 10px;
-  letter-spacing: 0.22em;
+  font-size: 30px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   
   color: var(--charcoal);
