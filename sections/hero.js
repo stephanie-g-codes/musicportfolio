@@ -13,7 +13,7 @@ function renderHero() {
         <!--
           TO ADD YOUR PHOTO:
           Replace the div below with:
-          <img src="assets/images/hero.jpg" alt="${artist.name}" class="hero__photo" />
+          <img src="assets/images/hero.png" alt="${artist.name}" class="hero__photo" />
         -->
         <div class="hero__visual">
           <div class="hero__visual-inner">
