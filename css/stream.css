@@ -1,0 +1,106 @@
+/* ─────────────────────────────────────────
+   css/stream.css
+   Streaming platform links bar
+───────────────────────────────────────── */
+
+.stream {
+  background: var(--petal);
+  padding: 40px var(--section-px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  border-bottom: 0.5px solid var(--mist);
+}
+
+.stream__label {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  opacity: 0.4;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.stream__links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stream__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 0.5px solid var(--mist);
+  background: none;
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+.stream__btn:hover {
+  background: var(--charcoal);
+  border-color: var(--charcoal);
+  color: var(--cream);
+}
+.stream__btn:hover .stream__btn-icon path,
+.stream__btn:hover .stream__btn-icon circle,
+.stream__btn:hover .stream__btn-icon rect {
+  fill: var(--cream);
+}
+
+.stream__btn-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.stream__btn-icon path,
+.stream__btn-icon circle,
+.stream__btn-icon rect {
+  fill: var(--charcoal);
+  transition: fill var(--transition-fast);
+}
+
+/* Spotify green tint on hover */
+.stream__btn--spotify:hover {
+  background: #1DB954;
+  border-color: #1DB954;
+  color: #fff;
+}
+.stream__btn--spotify:hover .stream__btn-icon path {
+  fill: #fff;
+}
+
+/* Apple Music red tint on hover */
+.stream__btn--apple:hover {
+  background: #FA2D48;
+  border-color: #FA2D48;
+  color: #fff;
+}
+.stream__btn--apple:hover .stream__btn-icon path {
+  fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .stream {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 32px var(--section-px);
+  }
+  .stream__links {
+    width: 100%;
+  }
+  .stream__btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
