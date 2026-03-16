@@ -21,8 +21,8 @@ function renderMusic() {
 
       <div class="music__left">
         <div class="section-label section-label--light">Latest Release</div>
-        <h2 class="music__title">Debut EP<br><em>${ep.title.replace(" EP","")}</em></h2>
-        <p class="music__body">Six tracks woven from late-night reverie — soft textures, honest words, and the gentle ache of almost-memories.</p>
+        // <h2 class="music__title">Debut EP<br><em>${ep.title.replace(" EP","")}</em></h2>
+        // <p class="music__body">Six tracks woven from late-night reverie — soft textures, honest words, and the gentle ache of almost-memories.</p>
         <ul class="track-list">${tracksHTML}</ul>
       </div>
 
