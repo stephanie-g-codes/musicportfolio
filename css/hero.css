@@ -73,15 +73,15 @@
 }
 
 .hero__eyebrow {
-  font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--rose); margin-bottom: 20px; font-weight: 400;
+  font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--rose); margin-bottom: 24px; font-weight: 400;
   opacity: 0;
   animation: fadeUp 0.9s 0.2s forwards;
 }
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(56px, 7vw, 82px);
+  font-size: clamp(72px, 9vw, 119px);
   font-weight: 300; line-height: 0.93;
   color: var(--charcoal); letter-spacing: -0.01em;
   margin-bottom: 36px;
@@ -91,9 +91,9 @@
 .hero__title em { font-style: italic; color: var(--deep-rose); }
 
 .hero__desc {
-  font-size: 14px; line-height: 1.85;
+  font-size: 16px; line-height: 1.85;
   color: var(--charcoal); opacity: 0;
-  max-width: 300px; margin-bottom: 52px; font-weight: 300;
+  max-width: 380px; margin-bottom: 52px; font-weight: 300;
   animation: fadeUp 0.9s 0.6s forwards;
 }
 
