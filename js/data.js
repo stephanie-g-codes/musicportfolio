@@ -34,12 +34,12 @@ const SITE_DATA = {
   // ── Tracks ───────────────────────────────
   // To add real audio: set audioSrc to a relative path e.g. "assets/audio/snooze.mp3"
   tracks: [
-    { num: "01", name: "Snooze",           duration: "3:42", badge: "Single", audioSrc: null },
-    { num: "02", name: "Together",      duration: "4:11", badge: null,     audioSrc: null },
-    { num: "03", name: "Golden Hour Skin", duration: "3:57", badge: null,     audioSrc: null },
-    { num: "04", name: "Blush & Fade",     duration: "3:28", badge: null,     audioSrc: null },
-    { num: "05", name: "Almost Morning",   duration: "5:03", badge: null,     audioSrc: null },
-    { num: "06", name: "Softer Now",       duration: "4:29", badge: null,     audioSrc: null },
+    { num: "01", name: "Snooze - Sneak Peak",           duration: "0:29", badge: "New Release", audioSrc: "assets/Snooze_Sneak_Peak.wav" },
+    { num: "02", name: "Together",      duration: "0:28", badge: "New Release",     audioSrc: "assets/togethershort.wav" },
+    { num: "03", name: "Angel",      duration: "1:45", badge: Null,     audioSrc: "assets/AngelWeb.m4a },
+    { num: "04", name: "I love you, friend",      duration: "0:25", badge: Null,     audioSrc: "assets/iloveyoufriendshort.wav },
+    { num: "05", name: "Body Unpositive - demo",      duration: "1:25", badge: Null,     audioSrc: "assets/Bodyunpositivity.mp3},
+
   ],
 
   ep: {
