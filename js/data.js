@@ -24,9 +24,10 @@ const SITE_DATA = {
 
   // ── Marquee ticker ───────────────────────
   marqueeItems: [
-    "New single out now",
-    "Available for bookings 2025–26",
-    "Debut EP — Snooze",
+    "New singles out now",
+    "Available for bookings 2026-27",
+    "Snooze",
+    "Together",
     "Live dates this spring",
   ],
 
@@ -34,7 +35,7 @@ const SITE_DATA = {
   // To add real audio: set audioSrc to a relative path e.g. "assets/audio/snooze.mp3"
   tracks: [
     { num: "01", name: "Snooze",           duration: "3:42", badge: "Single", audioSrc: null },
-    { num: "02", name: "Dried Roses",      duration: "4:11", badge: null,     audioSrc: null },
+    { num: "02", name: "Together",      duration: "4:11", badge: null,     audioSrc: null },
     { num: "03", name: "Golden Hour Skin", duration: "3:57", badge: null,     audioSrc: null },
     { num: "04", name: "Blush & Fade",     duration: "3:28", badge: null,     audioSrc: null },
     { num: "05", name: "Almost Morning",   duration: "5:03", badge: null,     audioSrc: null },
@@ -42,8 +43,8 @@ const SITE_DATA = {
   ],
 
   ep: {
-    title: "Snooze EP",
-    sub:   "Stream everywhere · 2025",
+    title: "EP Coming Soon",
+    sub:   "Stream everywhere · 2026",
   },
 
   // ── About chips ──────────────────────────
