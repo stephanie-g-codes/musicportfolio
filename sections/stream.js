@@ -17,7 +17,7 @@ function renderStream() {
     </svg>
   `;
 
-const appleIcon = `<img src="assets/Apple_Music_Icon_RGB_lg_073120.svg" style="width:22px;height:22px;display:block;" alt="Apple Music" />`;
+const appleIcon = `<img src="assets/images/Apple_Music_Icon_RGB_lg_073120.svg" style="width:22px;height:22px;display:block;" alt="Apple Music" />`;
 
 document.getElementById("stream-root").innerHTML = `
     <div class="stream" id="stream">
