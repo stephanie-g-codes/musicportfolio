@@ -11,13 +11,6 @@ function renderHero() {
 
       <div class="hero__visual-col">
         <img src="assets/images/hero.png" alt="${artist.name}" class="hero__photo" />
-        // <div class="hero__visual">
-        //   <div class="hero__visual-inner">
-        //     <div class="hero__blob"></div>
-        //     <div class="hero__vline"></div>
-        //     <span class="hero__script">snooze</span>
-        //   </div>
-        // </div>
       </div>
 
       <div class="hero__text-col">
