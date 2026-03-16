@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   renderNav();
   renderHero();
   renderMarquee();
-  renderMusic();
-  renderAbout();
   renderLive();
+  // renderMusic();
+  renderAbout();
   renderBooking();
   renderFooter();
 
