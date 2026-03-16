@@ -99,16 +99,23 @@
 
 @media (max-width: 768px) {
   .stream {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 32px var(--section-px);
+    grid-template-columns: 1fr;
+  }
+  .stream__left {
+    padding-bottom: 0;
+    justify-content: flex-start;
+  }
+  .stream__right {
+    padding-top: 16px;
+    gap: 10px;
   }
   .stream__links {
-    width: 100%;
+    flex-wrap: wrap;
   }
   .stream__btn {
-    flex: 1;
     justify-content: center;
+    padding: 14px 28px;
+    flex: 1;
+    min-width: 140px;
   }
 }
