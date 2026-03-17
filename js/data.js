@@ -33,13 +33,13 @@ const SITE_DATA = {
   // ── Upcoming shows ────────────────────────
   shows: [
     {
-      time:  "8:30 – 10:30 PM",
-      venue: "Alchemy Coffee Shop",
+      time:  "8:30 – 10:30 AM",
+      venue: "Alchemy Coffee Shop - Richmond, VA ",
       date:  "April 4, 2026",
     },
     {
       time:  "5:00 PM",
-      venue: "Helping Hands 5th Year Anniversary",
+      venue: "Helping Hands 5th Year Anniversary - Burke, VA",
       date:  "May 16, 2026",
     },
   ],
