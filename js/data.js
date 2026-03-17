@@ -30,6 +30,19 @@ const SITE_DATA = {
     "Together",
     "Live dates this spring",
   ],
+  // ── Upcoming shows ────────────────────────
+  shows: [
+    {
+      time:  "8:30 – 10:30 PM",
+      venue: "Alchemy Coffee Shop",
+      date:  "April 4, 2026",
+    },
+    {
+      time:  "5:00 PM",
+      venue: "Helping Hands 5th Year Anniversary",
+      date:  "May 16, 2026",
+    },
+  ],
 
   // ── Tracks ───────────────────────────────
   // audioSrc: path relative to index.html, e.g. "assets/snooze.mp3"
