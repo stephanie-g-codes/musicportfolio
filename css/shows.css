@@ -1,0 +1,98 @@
+/* ─────────────────────────────────────────
+   css/shows.css
+───────────────────────────────────────── */
+
+.shows {
+  background: var(--cream);
+  padding: var(--section-py) var(--section-px);
+  border-bottom: 0.5px solid var(--mist);
+}
+
+.shows__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.shows__heading {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 54px);
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.0;
+}
+.shows__heading em {
+  font-style: italic;
+  color: var(--rose);
+}
+
+.shows__count {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mist);
+  padding-bottom: 6px;
+}
+
+.show-list { list-style: none; }
+
+.show-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 0.5px solid var(--mist);
+  transition: padding-left var(--transition-normal);
+}
+.show-row:first-child { border-top: 0.5px solid var(--mist); }
+.show-row:hover { padding-left: 8px; }
+
+.show-row__left {}
+
+.show-row__venue {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 300;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+  line-height: 1.1;
+}
+
+.show-row__time {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--rose);
+  text-transform: uppercase;
+}
+
+.show-row__date {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--mist);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.shows__empty {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--mist);
+  padding: 40px 0;
+}
+
+@media (max-width: 600px) {
+  .shows__top { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .show-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 24px 0;
+  }
+  .show-row__date { text-align: left; }
+  .show-row__venue { font-size: 22px; }
+}
