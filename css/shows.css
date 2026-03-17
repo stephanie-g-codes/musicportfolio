@@ -31,7 +31,7 @@
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--mist);
+  color: #322c2b;
   padding-bottom: 6px;
 }
 
@@ -72,7 +72,7 @@
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
-  color: var(--mist);
+  color: #322c2b;
   text-align: right;
   white-space: nowrap;
 }
