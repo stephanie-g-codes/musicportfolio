@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderHero();
   renderStream();
   renderMarquee();
+  renderShows();
   renderAudio();
   renderLive();
   renderAbout();
